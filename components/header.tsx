@@ -29,7 +29,7 @@ export default function Navigation() {
           <motion.div
             initial={{ opacity: 0, rotateY: -180 }}
             animate={{ opacity: 1, rotateY: 0 }}
-            className="text-2xl font-bold text-primary animate-glow transform-3d"
+            className="text-2xl font-bold text-blue-400 animate-glow transform-3d"
             whileHover={{ rotateY: 10, scale: 1.1 }}
           >
             SK
