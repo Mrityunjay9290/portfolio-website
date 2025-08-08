@@ -69,7 +69,7 @@ const AchievementsSection = () => {
   };
 
   return (
-    <section id="achievements" className="py-20 bg-background" ref={ref}>
+    <section id="achievements" className="py-20 bg-gray-900" ref={ref}>
       <div className="container mx-auto px-4">
         <motion.div
           variants={containerVariants}

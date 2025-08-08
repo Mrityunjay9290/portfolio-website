@@ -40,7 +40,7 @@ const FooterSection = () => {
   };
 
   return (
-    <footer className="relative bg-background border-t">
+    <footer className="relative bg-gray-900 border-t border-gray-700">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{

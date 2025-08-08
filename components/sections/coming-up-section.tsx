@@ -71,7 +71,7 @@ const ComingUpSection = () => {
   };
 
   return (
-    <section id="coming-up" className="py-20 bg-muted/30" ref={ref}>
+    <section id="coming-up" className="py-20 bg-gray-800" ref={ref}>
       <div className="container mx-auto px-4">
         <motion.div
           variants={containerVariants}
