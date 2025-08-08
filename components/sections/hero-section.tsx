@@ -230,7 +230,7 @@ export default function HeroSection() {
             </div>
           </motion.div>
           <motion.p
-            className="text-lg md:text-xl text-gray-400 mb-6 max-w-2xl mx-auto"
+            className="text-lg md:text-xl text-slate-400 mb-6 max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 20, rotateX: -10 }}
             animate={{ opacity: 1, y: 0, rotateX: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
@@ -245,7 +245,7 @@ export default function HeroSection() {
           >
             <motion.button
               onClick={() => scrollToSection("#projects")}
-              className="bg-primary hover:bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform-3d"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform-3d"
               whileHover={{ 
                 scale: 1.05,
                 rotateY: 5,
@@ -258,7 +258,7 @@ export default function HeroSection() {
             </motion.button>
             <motion.button
               onClick={() => scrollToSection("#contact")}
-              className="border border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform-3d"
+              className="border border-blue-500 text-blue-400 hover:bg-blue-600 hover:text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform-3d"
               whileHover={{ 
                 scale: 1.05,
                 rotateY: -5,

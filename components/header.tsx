@@ -23,13 +23,13 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-dark-900/90 backdrop-blur-md border-b border-dark-700 transform-3d">
+    <nav className="fixed top-0 w-full z-50 bg-slate-950/90 backdrop-blur-md border-b border-slate-800 transform-3d">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <motion.div
             initial={{ opacity: 0, rotateY: -180 }}
             animate={{ opacity: 1, rotateY: 0 }}
-            className="text-2xl font-bold text-blue-400 animate-glow transform-3d"
+            className="text-2xl font-bold text-blue-500 animate-glow transform-3d"
             whileHover={{ rotateY: 10, scale: 1.1 }}
           >
             SK
@@ -41,7 +41,7 @@ export default function Navigation() {
               <motion.button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="hover:text-primary transition-all duration-300 transform-3d"
+                className="text-slate-300 hover:text-blue-400 transition-all duration-300 transform-3d"
                 whileHover={{ 
                   scale: 1.05,
                   rotateX: 5,
@@ -56,7 +56,7 @@ export default function Navigation() {
 
           {/* Mobile Navigation Button */}
           <button
-            className="md:hidden text-primary"
+            className="md:hidden text-blue-400"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -69,13 +69,13 @@ export default function Navigation() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="md:hidden mt-4 bg-dark-800 rounded-lg p-4"
+            className="md:hidden mt-4 bg-slate-900 rounded-lg p-4"
           >
             {navItems.map((item) => (
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="block w-full text-left py-2 hover:text-primary transition-colors duration-300"
+                className="block w-full text-left py-2 text-slate-300 hover:text-blue-400 transition-colors duration-300"
               >
                 {item.name}
               </button>
